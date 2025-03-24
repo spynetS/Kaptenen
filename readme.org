@@ -12,12 +12,12 @@ The player can mine stones, cut trees or scavenge loot creates to get resources.
 **** Weapons
 Every weapon has an evolution
 1. Knife (starting)
-   Upgrade1: Machete
-   Upgrade2: Sword
+   1. Upgrade1: Machete
+   2. Upgrade2: Sword
 
 2. Pistol
-   Upgrade1: Shotgun
-   Upgrade2: Machinegun
+   1. Upgrade1: Shotgun
+   2. Upgrade2: Machinegun
 **** Armor
 The armor adds hp to the player. The player starts with 10 and with all upgrades 100.
 
@@ -28,14 +28,14 @@ The armor adds hp to the player. The player starts with 10 and with all upgrades
 **** Defense
 1. Walls giving the base better hp
 2. Fence
-   Starting:  tripwire (slows down enemies)
-   upgrade1: wood fence (enemies has to destroy to enter)
-   upgrpade2: stone fence (enemies has to destroy to enter but with health)
-   upgrade3: barbed-wire does damage to enemies who the fence
+   1. Starting:  tripwire (slows down enemies)
+   2. upgrade1: wood fence (enemies has to destroy to enter)
+   3. upgrpade2: stone fence (enemies has to destroy to enter but with health)
+   4. upgrade3: barbed-wire does damage to enemies who the fence
 3. Turrets
-   upgrade1: Bow
-   upgrade2: Machinegun turret
-   upgrade3: Chicken shits eggs
+   1.  upgrade1: Bow
+   2. upgrade2: Machinegun turret
+   3. upgrade3: Chicken shits eggs
 
 *** Events
 Some special rounds will be a themed at random. The enemies will be changed for themed ones.
