@@ -23,7 +23,7 @@ The armor adds hp to the player. The player starts with 10 and with all upgrades
 
 
 *** House upgrades
-1. Faster player respawn.
+1. Player respawn faster.
 
 **** Defense
 1. Walls giving the base better hp
