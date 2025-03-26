@@ -21,7 +21,7 @@ public class Item : MonoBehaviour
 
     public void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
-            this.Upgrade(cost);
+            this.Upgrade(new List<GameObject>());
         }
     }
     /**
