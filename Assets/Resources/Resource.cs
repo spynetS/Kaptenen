@@ -1,4 +1,6 @@
-public class Resource : MonoBehavior
+using UnityEngine;
+
+public class Resource : MonoBehaviour
 {
     public GameObject dropItem;
     public int dropAmount;

@@ -35,7 +35,7 @@ public class Item : MonoBehaviour
         if(nextUpgrade){
             if(this.cost == (cost)){
                 foreach(GameObject v in cost){
-                    Destroy(cost);
+                    Destroy(v);
                 }
                 GameObject newGameObject = Instantiate(nextUpgrade, transform.position, transform.rotation, gameObject.transform.parent);
                 Destroy(gameObject);
