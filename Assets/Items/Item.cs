@@ -14,12 +14,12 @@ public class Item : MonoBehaviour
     /**
      * Method that starts uses an item. Abstract
      *  */
-    abstract void Use()
+    public virtual void Use()
     {
         
     }
 
-    void Update(){
+    public void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
             this.Upgrade(cost);
         }
@@ -29,10 +29,10 @@ public class Item : MonoBehaviour
      * cost is the same as the cost then the item
      * gets repalced with the `nextUpgrade` item.
      *  */
-    bool Upgrade(List<GameObject> cost){
+    public bool Upgrade(List<GameObject> cost){
         if(nextUpgrade){
-            if(this.cost.equals(cost)){
-                GameObject newGameObject = Instantiate(nextUpgrade, transform.position, transform.rotation, gameObject.parent);
+            if(this.cost == (cost)){
+                GameObject newGameObject = Instantiate(nextUpgrade, transform.position, transform.rotation, gameObject.transform.parent);
                 Destroy(gameObject);
                 return true;
             }
@@ -40,7 +40,7 @@ public class Item : MonoBehaviour
         return false;
     }
     /** Returns the cost to be upgraded */
-    List<GameObject> getCost(){
+    public List<GameObject> getCost(){
         return this.cost;
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine;
 public class ConsumableItem : Item
 {
     public float boost;
-    override void Use()
+    public override void Use()
     {
 
     }
