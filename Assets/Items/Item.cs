@@ -1,12 +1,20 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+/**
+ * Item is a object that can be picked up by a player
+ * and used. This is mostly a abstract version to be implemented
+ * but can be used to unsusable items.
+ *  */
 public class Item : MonoBehaviour
 {
     public GameObject nextUpgrade;
     public List<GameObject> cost = new List<GameObject>();
 
-    void Use()
+    /**
+     * Method that starts uses an item. Abstract
+     *  */
+    abstract void Use()
     {
         
     }
@@ -16,11 +24,23 @@ public class Item : MonoBehaviour
             this.Upgrade(cost);
         }
     }
-
-    void Upgrade(List<GameObject> cost){
+    /**
+     * Method to handle upgrading of items. If the
+     * cost is the same as the cost then the item
+     * gets repalced with the `nextUpgrade` item.
+     *  */
+    bool Upgrade(List<GameObject> cost){
         if(nextUpgrade){
-            GameObject B = Instantiate(nextUpgrade, transform.position, transform.rotation);
-            Destroy(gameObject);
+            if(this.cost.equals(cost)){
+                GameObject newGameObject = Instantiate(nextUpgrade, transform.position, transform.rotation, gameObject.parent);
+                Destroy(gameObject);
+                return true;
+            }
         }
+        return false;
+    }
+    /** Returns the cost to be upgraded */
+    List<GameObject> getCost(){
+        return this.cost;
     }
 }
